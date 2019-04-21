@@ -9,7 +9,7 @@ let itemCost = null;
 let stock = null;
 
 let data = [
-  ['Item ID', 'Product', 'Department', 'Price (USD)', 'Stock']
+    ['item_ID', 'product_name', 'department_name', 'price', 'stock_quantity']
 ];
 
 prompt.start();
@@ -17,8 +17,8 @@ prompt.start();
 var connection = mysql.createConnection({
   host: "localhost",
 
-  // Your port; if not 3306
-  port: 3306,
+  
+  port: 3333,
 
   // Your username
   user: process.env.WEBSITE_USER,
